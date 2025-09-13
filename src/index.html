@@ -13,7 +13,10 @@
     />
   </head>
   <!-- 
-  1. Bootstrap à revoir -->
+  1. Bootstrap à revoir
+  2. Les cartes de dieux sont des article ou pas? Elles sont une description
+  qui se suffit à elle-même mais elles n'emmènent pas sur une autre page
+   -->
   <body>
     <header id="accueil">
       <div class="container">
@@ -57,6 +60,11 @@
         la fécondité." }
       </include>
       <include src="filters.html"></include>
+      <include src="god-card.html">
+        { "godimage": "img/isis.png", "godimagealt": "Athéna", "godtitle":
+        "Athéna", "godpantheon": "Panthéon grec", "godattributes": "Déesse de la
+        guerre" }
+      </include>
     </main>
     <footer>
       <div class="container">
@@ -84,7 +92,6 @@
         </div>
       </div>
     </footer>
-
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
