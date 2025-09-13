@@ -12,6 +12,8 @@
       rel="stylesheet"
     />
   </head>
+  <!-- 
+  1. Bootstrap à revoir -->
   <body>
     <header id="accueil">
       <div class="container">
@@ -44,15 +46,44 @@
         </div>
       </div>
     </header>
-    <h1>Voir les dieux des panthéons</h1>
-    <include src="day-article.html">
-      { "godtitle": "Bacchus", "godattributes": "Dieu romain du vin",
-      "godsecondattributes": "Egalement Dieu de l'ivresse, des débordements, de
-      la nature et des festivités.", "goddescription": "Bacchus est un dieu
-      romain correspondant à Dionysos dans la mythologie grecque. Les Romains
-      utilisaient Bacchus comme un autre nom de Liber Pater, un dieu latin de la
-      fécondité." }
-    </include>
+    <main>
+      <h1>Voir les dieux des panthéons</h1>
+      <include src="day-article.html">
+        { "godtitle": "Bacchus", "godattributes": "Dieu romain du vin",
+        "godsecondattributes": "Egalement Dieu de l'ivresse, des débordements,
+        de la nature et des festivités.", "goddescription": "Bacchus est un dieu
+        romain correspondant à Dionysos dans la mythologie grecque. Les Romains
+        utilisaient Bacchus comme un autre nom de Liber Pater, un dieu latin de
+        la fécondité." }
+      </include>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <nav>
+              <ul>
+                <li><a href="#mesfavoris">Mes favoris</a></li>
+                <li><a href="#dieudujour">Dieu du jour</a></li>
+                <li><a href="#dieuxpopulaires">Dieux populaires</a></li>
+                <li><a href="">Politique de confidentialité</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-4">
+            <nav>
+              <ul>
+                <li>youtube</li>
+                <li>facebook</li>
+                <li>instagram</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-12">Atlas Divin @ 2025. Tous droits réservés</div>
+        </div>
+      </div>
+    </footer>
+
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
