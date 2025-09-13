@@ -2,13 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>eikon parcel starter</title>
+    <title>Index</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="scss/main.scss" />
   </head>
   <body>
-    <h1>Hello world</h1>
-
+    <include src="day-article.html">
+      { "godtitle": "Bacchus", "godattributes": "Dieu romain du vin",
+      "godsecondattributes": "Egalement Dieu de l'ivresse, des débordements, de
+      la nature et des festivités.", "goddescription": "Bacchus est un dieu
+      romain correspondant à Dionysos dans la mythologie grecque. Les Romains
+      utilisaient Bacchus comme un autre nom de Liber Pater, un dieu latin de la
+      fécondité." }
+    </include>
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
