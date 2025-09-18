@@ -46,6 +46,7 @@ html[data-theme="dark"] #dark-mode-btn {
 }
 
 body {
+  background-color: var(--color-background);
   font-family: "Bubbler One", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -53,9 +54,20 @@ body {
   color: var(--color-text-main);
 }
 
+header {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-background-components);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 header #logo {
   font-family: "Caesar Dressing";
   font-size: 40px;
+  color: var(--color-text-secondary);
 }
 
 h1,
