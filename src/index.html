@@ -16,7 +16,7 @@
     <header id="accueil">
       <div class="container">
         <div class="row">
-          <div class="col-8"><a href="#accueil">Atlas Divin</a></div>
+          <div class="col-8"><a href="#accueil" id="logo">Atlas Divin</a></div>
           <div class="col-4">
             <nav class="menu-desktop">
               <ul>
@@ -63,22 +63,17 @@
         <div class="row">
           <div class="col-12"><h1>Voir les dieux des panthéons</h1></div>
           <div class="col-12">
-            <section id="dieudujour">
-              <include src="day-article.html">
-                { "godtitle": "Bacchus", "godattributes": "Dieu romain du vin",
-                "godsecondattributes": "Egalement Dieu de l'ivresse, des
-                débordements, de la nature et des festivités.",
-                "goddescription": "Bacchus est un dieu romain correspondant à
-                Dionysos dans la mythologie grecque. Les Romains utilisaient
-                Bacchus comme un autre nom de Liber Pater, un dieu latin de la
-                fécondité." }
-              </include>
-            </section>
+            <include src="day-article.html">
+              { "godtitle": "Bacchus", "godattributes": "Dieu romain du vin",
+              "godsecondattributes": "Egalement Dieu de l'ivresse, des
+              débordements, de la nature et des festivités.", "goddescription":
+              "Bacchus est un dieu romain correspondant à Dionysos dans la
+              mythologie grecque. Les Romains utilisaient Bacchus comme un autre
+              nom de Liber Pater, un dieu latin de la fécondité." }
+            </include>
           </div>
           <div class="col-12 col-lg-3">
-            <section class="filters">
-              <include src="filters.html"></include>
-            </section>
+            <include src="filters.html"></include>
           </div>
           <div class="col-12 col-lg-9">
             <section class="god">
@@ -114,7 +109,9 @@
               </ul>
             </nav>
           </div>
-          <div class="col-12">Atlas Divin @ 2025. Tous droits réservés</div>
+          <div class="col-12">
+            <p>Atlas Divin @ 2025. Tous droits réservés</p>
+          </div>
         </div>
       </div>
     </footer>

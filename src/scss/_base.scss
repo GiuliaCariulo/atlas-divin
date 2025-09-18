@@ -45,18 +45,53 @@ html[data-theme="dark"] #dark-mode-btn {
   display: none;
 }
 
-.row + .row {
-  margin-top: 16px;
-}
-
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
-
 body {
-  background-color: var(--color-red);
+  font-family: "Bubbler One", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-text-main);
+}
+
+header #logo {
+  font-family: "Caesar Dressing";
+  font-size: 40px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Caesar Dressing";
+}
+
+h1 {
+  font-size: 32px;
+  color: var(--text-secondary);
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
