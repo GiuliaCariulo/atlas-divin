@@ -12,11 +12,6 @@
       rel="stylesheet"
     />
   </head>
-  <!-- 
-  1. Bootstrap à revoir
-  2. Les cartes de dieux sont des article ou pas? Elles sont une description
-  qui se suffit à elle-même mais elles n'emmènent pas sur une autre page
-   -->
   <body>
     <header id="accueil">
       <div class="container">
@@ -50,21 +45,38 @@
       </div>
     </header>
     <main>
-      <h1>Voir les dieux des panthéons</h1>
-      <include src="day-article.html">
-        { "godtitle": "Bacchus", "godattributes": "Dieu romain du vin",
-        "godsecondattributes": "Egalement Dieu de l'ivresse, des débordements,
-        de la nature et des festivités.", "goddescription": "Bacchus est un dieu
-        romain correspondant à Dionysos dans la mythologie grecque. Les Romains
-        utilisaient Bacchus comme un autre nom de Liber Pater, un dieu latin de
-        la fécondité." }
-      </include>
-      <include src="filters.html"></include>
-      <include src="god-card.html">
-        { "godimage": "img/isis.png", "godimagealt": "Athéna", "godtitle":
-        "Athéna", "godpantheon": "Panthéon grec", "godattributes": "Déesse de la
-        guerre" }
-      </include>
+      <div class="container">
+        <div class="row">
+          <div class="col-12"><h1>Voir les dieux des panthéons</h1></div>
+          <div class="col-12">
+            <section id="dieudujour">
+              <include src="day-article.html">
+                { "godtitle": "Bacchus", "godattributes": "Dieu romain du vin",
+                "godsecondattributes": "Egalement Dieu de l'ivresse, des
+                débordements, de la nature et des festivités.",
+                "goddescription": "Bacchus est un dieu romain correspondant à
+                Dionysos dans la mythologie grecque. Les Romains utilisaient
+                Bacchus comme un autre nom de Liber Pater, un dieu latin de la
+                fécondité." }
+              </include>
+            </section>
+          </div>
+          <div class="col-12 col-lg-3">
+            <section class="filters">
+              <include src="filters.html"></include>
+            </section>
+          </div>
+          <div class="col-12 col-lg-9">
+            <section class="god">
+              <include src="god-card.html">
+                { "godimage": "img/isis.png", "godimagealt": "Athéna",
+                "godtitle": "Athéna", "godpantheon": "Panthéon grec",
+                "godattributes": "Déesse de la guerre" }
+              </include>
+            </section>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="container">
