@@ -1,3 +1,12 @@
 .filters h2 {
   font-family: "Bubbler One", sans-serif;
+  margin-bottom: 12px;
+}
+
+.filters h3 {
+  padding: 12px 8px;
+  color: var(--color-background);
+  background-color: var(--color-background-components);
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
