@@ -1,3 +1,5 @@
+// god-day_________________________________
+
 .god-day {
   padding: 12px 16px;
   border-radius: 8px;
@@ -37,11 +39,14 @@ p.god-attributes {
   text-underline-offset: 3px;
 }
 
-article.god-card {
-  border: 2px solid var(--color-text-main);
-  border-radius: 8px;
-  width: 179px;
-  overflow: hidden;
+// god-card___________________________
+
+.god {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
 .god-first-div {
@@ -79,4 +84,45 @@ article.god-card {
 .god-second-div div {
   display: flex;
   justify-content: space-between;
+}
+
+// article god-card_____________________________
+
+article.god-card {
+  border: 2px solid var(--color-text-main);
+  border-radius: 8px;
+  width: 179px;
+  overflow: hidden;
+}
+
+article.god-card-greek {
+  border-color: var(--color-blue);
+}
+
+.god-card-greek h2 {
+  color: var(--color-blue);
+}
+
+article.god-card-roman {
+  border-color: var(--color-red);
+}
+
+.god-card-roman h2 {
+  color: var(--color-red);
+}
+
+article.god-card-egyptian {
+  border-color: var(--color-yellow);
+}
+
+.god-card-egyptian h2 {
+  color: var(--color-yellow);
+}
+
+article.god-card-nordic {
+  border-color: var(--color-green);
+}
+
+.god-card-nordic h2 {
+  color: var(--color-green);
 }
