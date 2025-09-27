@@ -55,6 +55,13 @@ p.god-attributes {
   margin-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+  .god {
+    margin-bottom: 40px;
+    gap: 20px;
+  }
+}
+
 .god-first-div {
   position: relative;
   z-index: -1;
@@ -69,8 +76,13 @@ p.god-attributes {
   position: absolute;
   top: 12px;
   right: 12px;
-  width: 24px;
-  height: 24px;
+  width: 15px;
+  height: 21px;
+}
+
+button.god-save {
+  background-color: transparent;
+  border: none;
 }
 
 .god-first-div h2 {

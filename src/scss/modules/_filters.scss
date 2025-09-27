@@ -4,9 +4,27 @@
 }
 
 .filters h3 {
-  padding: 12px 8px;
   color: var(--color-background);
+}
+
+.god-filter {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--color-background-components);
   border-radius: 8px;
   margin-bottom: 20px;
+  padding: 12px 8px;
+}
+
+.god-greek {
+  background-color: var(--color-blue);
+}
+.god-egyptian {
+  background-color: var(--color-yellow);
+}
+.god-nordic {
+  background-color: var(--color-green);
+}
+.god-roman {
+  background-color: var(--color-red);
 }
