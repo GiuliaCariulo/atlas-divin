@@ -64,10 +64,14 @@ header {
   justify-content: space-between;
 }
 
-header #accueil {
+header #logo {
   font-family: "Caesar Dressing";
   font-size: 40px;
   color: var(--color-text-secondary);
+}
+
+a#logo {
+  text-decoration: none;
 }
 
 h1,
@@ -98,6 +102,10 @@ h3 {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 li {
