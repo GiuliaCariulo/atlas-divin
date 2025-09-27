@@ -107,15 +107,12 @@ button {
 
 footer {
   background-color: var(--color-background-components);
-  padding: 20px 12px;
-}
-
-footer nav {
-  background-color: red;
+  padding: 20px 0;
 }
 
 footer p {
   padding-top: 20px;
   border-top: 2px solid var(--color-text-secondary);
   font-size: 16px;
+  margin-top: 20px;
 }

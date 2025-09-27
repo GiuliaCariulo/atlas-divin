@@ -1,0 +1,15 @@
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-nav-social {
+  flex-direction: row;
+}
