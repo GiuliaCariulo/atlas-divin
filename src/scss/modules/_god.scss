@@ -39,6 +39,12 @@ p.god-attributes {
   text-underline-offset: 3px;
 }
 
+@media (min-width: 768px) {
+  article.god-day {
+    margin: 40px 0;
+  }
+}
+
 // god-card___________________________
 
 .god {

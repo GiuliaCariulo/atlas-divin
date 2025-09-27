@@ -1,3 +1,59 @@
+// Mobile______________________________
+
+.menu-mobile {
+  display: none;
+}
+
+button.menu-burger {
+  height: 24px;
+  width: 24px;
+}
+
+@media (max-width: 768px) {
+  .menu-mobile {
+    display: block;
+  }
+
+  .menu-mobile-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    position: fixed;
+    top: 88px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    border-top: 1px solid var(--color-text-secondary);
+    padding: 20px 12px;
+    background: var(--color-background-components);
+    opacity: 0;
+    height: 213px;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  .menu.is-active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.menu-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.menu-flex ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 // Desktop-------------------------------
 .menu-desktop {
   display: none;
@@ -15,48 +71,14 @@
   }
   .menu-desktop nav {
     display: inline;
-    margin-right: 32px;
-  }
-}
-
-// Mobile______________________________
-
-.menu-mobile {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .menu-mobile {
-    display: block;
   }
 
-  .menu-burger {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1;
+  .menu-flex {
+    flex-direction: row;
+    align-items: center;
   }
 
-  .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 50px;
-    background: #ccc;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s;
+  .menu-flex ul {
+    flex-direction: row;
   }
-  .menu.is-active {
-    opacity: 1;
-    pointer-events: auto;
-  }
-}
-
-.menu-flex {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
 }
