@@ -13,3 +13,18 @@
 .footer-nav-social {
   flex-direction: row;
 }
+
+@media (min-width: 992px) {
+  .footer-nav {
+    flex-direction: row;
+  }
+  .menu-desktop ul {
+    display: flex;
+    font-size: 16px;
+    gap: 16px;
+  }
+  .menu-desktop nav {
+    display: inline;
+    margin-right: 32px;
+  }
+}

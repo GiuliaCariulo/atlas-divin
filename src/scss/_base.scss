@@ -79,7 +79,13 @@ h3 {
 h1 {
   font-size: 32px;
   color: var(--text-secondary);
-  margin-bottom: 24px;
+  margin: 20 0 24px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    margin-top: 40px;
+  }
 }
 
 h2 {
@@ -115,4 +121,14 @@ footer p {
   border-top: 2px solid var(--color-text-secondary);
   font-size: 16px;
   margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 40px;
+  }
+  footer p {
+    padding-top: 40px;
+    margin-top: 40px;
+  }
 }
