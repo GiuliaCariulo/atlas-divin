@@ -10,6 +10,7 @@ burger.addEventListener("click", toggleMenu);
 
 // Light/Dark mode___________________________
 
+// desktop
 const toggleDarkModeBtn = document.querySelector("#dark-mode-btn");
 const toggleLightModeBtn = document.querySelector("#light-mode-btn");
 
@@ -18,6 +19,20 @@ toggleDarkModeBtn.addEventListener("click", function () {
 });
 
 toggleLightModeBtn.addEventListener("click", function () {
+  document.querySelector("html").setAttribute("data-theme", "light");
+});
+
+// mobile
+const toggleDarkModeBtnMobile = document.querySelector("#dark-mode-btn-mobile");
+const toggleLightModeBtnMobile = document.querySelector(
+  "#light-mode-btn-mobile",
+);
+
+toggleDarkModeBtnMobile.addEventListener("click", function () {
+  document.querySelector("html").setAttribute("data-theme", "dark");
+});
+
+toggleLightModeBtnMobile.addEventListener("click", function () {
   document.querySelector("html").setAttribute("data-theme", "light");
 });
 

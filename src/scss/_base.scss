@@ -37,11 +37,13 @@ html[data-theme="dark"] {
   --color-green: #76e5b5;
 }
 
-html[data-theme="light"] #light-mode-btn {
+html[data-theme="light"] #light-mode-btn,
+html[data-theme="light"] #light-mode-btn-mobile {
   display: none;
 }
 
-html[data-theme="dark"] #dark-mode-btn {
+html[data-theme="dark"] #dark-mode-btn,
+html[data-theme="dark"] #dark-mode-btn-mobile {
   display: none;
 }
 
@@ -55,7 +57,7 @@ body {
 }
 
 header {
-  padding: 20px 12px;
+  padding: 20px 0;
   position: sticky;
   top: 0;
   background-color: var(--color-background-components);
@@ -127,7 +129,7 @@ footer p {
 
 @media (min-width: 768px) {
   footer {
-    padding: 40px;
+    padding: 40px 0;
   }
   footer p {
     padding-top: 40px;
