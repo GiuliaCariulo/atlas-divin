@@ -355,88 +355,105 @@
             </div>
             <section class="god">
               <div class="col-12 col-lg-9 offset-lg-3">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-6 col-md-4 col-lg-3">
-                      <include src="god-card-greek.html">
-                        { "godimage": "img/athena.png", "godimagealt": "Athéna",
-                        "godtitle": "Athéna", "godattributes": "Déesse de la
-                        guerre" }
-                      </include>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                      <include src="god-card-greek.html">
-                        { "godimage": "img/athena.png", "godimagealt": "Athéna",
-                        "godtitle": "Athéna", "godattributes": "Déesse de la
-                        guerre" }
-                      </include>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                      <include src="god-card-roman.html">
-                        { "godimage": "img/mars.png", "godimagealt": "Mars",
-                        "godtitle": "Mars", "godattributes": "Dieu de la guerre"
-                        }
-                      </include>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                      <include src="god-card-egyptian.html">
-                        { "godimage": "img/ra.png", "godimagealt": "Ra",
-                        "godtitle": "Ra", "godattributes": "Dieu créateur" }
-                      </include>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                      <include src="god-card-nordic.html">
-                        { "godimage": "img/freya.png", "godimagealt": "Afreya",
-                        "godtitle": "Freya", "godattributes": "Déesse de la
-                        fertilité" }
-                      </include>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                      <include src="god-card-nordic.html">
-                        { "godimage": "img/loki.png", "godimagealt": "Loki",
-                        "godtitle": "Loki", "godattributes": "Dieu du chaos" }
-                      </include>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                      <include src="god-card-roman.html">
-                        { "godimage": "img/fortuna.png", "godimagealt":
-                        "Fortuna", "godtitle": "Fortuna", "godattributes":
-                        "Déesse de la bonne fortune" }
-                      </include>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                      <include src="god-card-greek.html">
-                        { "godimage": "img/artemis.png", "godimagealt":
-                        "Artémis", "godtitle": "Artémis", "godattributes":
-                        "Déesse de la chasse" }
-                      </include>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                      <include src="god-card-egyptian.html">
-                        { "godimage": "img/anubis.png", "godimagealt": "Anubis",
-                        "godtitle": "Anubis", "godattributes": "Dieu funéraire"
-                        }
-                      </include>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                      <include src="god-card-greek.html">
-                        { "godimage": "img/zeus.png", "godimagealt": "Zeus",
-                        "godtitle": "Zeus", "godattributes": "Dieu du ciel" }
-                      </include>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                      <include src="god-card-roman.html">
-                        { "godimage": "img/lucifer.png", "godimagealt":
-                        "Lucifer", "godtitle": "Lucifer", "godattributes": "Dieu
-                        des étoiles" }
-                      </include>
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-3">
-                      <include src="god-card-nordic.html">
-                        { "godimage": "img/hel.png", "godimagealt": "Hel",
-                        "godtitle": "Hel", "godattributes": "Déesse des enfers"
-                        }
-                      </include>
+                <div class="god-cards">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6 col-md-4 col-lg-3">
+                        <include src="god-card-greek.html">
+                          { "godimage": "img/athena.png", "godimagealt":
+                          "Athéna", "godtitle": "Athéna", "godattributes":
+                          "Déesse de la guerre" }
+                        </include>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3">
+                        <include src="god-card-greek.html">
+                          { "godimage": "img/athena.png", "godimagealt":
+                          "Athéna", "godtitle": "Athéna", "godattributes":
+                          "Déesse de la guerre" }
+                        </include>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3">
+                        <include src="god-card-roman.html">
+                          { "godimage": "img/mars.png", "godimagealt": "Mars",
+                          "godtitle": "Mars", "godattributes": "Dieu de la
+                          guerre" }
+                        </include>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3">
+                        <include
+                          src="god-card-egyptian.html"
+                          data-type="Egyptian"
+                        >
+                          { "godimage": "img/ra.png", "godimagealt": "Ra",
+                          "godtitle": "Ra", "godattributes": "Dieu créateur" }
+                        </include>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3">
+                        <include src="god-card-nordic.html">
+                          { "godimage": "img/freya.png", "godimagealt":
+                          "Afreya", "godtitle": "Freya", "godattributes":
+                          "Déesse de la fertilité" }
+                        </include>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3">
+                        <include src="god-card-nordic.html">
+                          { "godimage": "img/loki.png", "godimagealt": "Loki",
+                          "godtitle": "Loki", "godattributes": "Dieu du chaos" }
+                        </include>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3">
+                        <include src="god-card-roman.html">
+                          { "godimage": "img/fortuna.png", "godimagealt":
+                          "Fortuna", "godtitle": "Fortuna", "godattributes":
+                          "Déesse de la bonne fortune" }
+                        </include>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3">
+                        <include src="god-card-greek.html">
+                          { "godimage": "img/artemis.png", "godimagealt":
+                          "Artémis", "godtitle": "Artémis", "godattributes":
+                          "Déesse de la chasse" }
+                        </include>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3">
+                        <include
+                          src="god-card-egyptian.html"
+                          data-type="Egyptian"
+                        >
+                          { "godimage": "img/anubis.png", "godimagealt":
+                          "Anubis", "godtitle": "Anubis", "godattributes": "Dieu
+                          funéraire" }
+                        </include>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3">
+                        <include src="god-card-greek.html">
+                          { "godimage": "img/zeus.png", "godimagealt": "Zeus",
+                          "godtitle": "Zeus", "godattributes": "Dieu du ciel" }
+                        </include>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3">
+                        <include src="god-card-roman.html">
+                          { "godimage": "img/lucifer.png", "godimagealt":
+                          "Lucifer", "godtitle": "Lucifer", "godattributes":
+                          "Dieu des étoiles" }
+                        </include>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3">
+                        <include src="god-card-nordic.html">
+                          { "godimage": "img/hel.png", "godimagealt": "Hel",
+                          "godtitle": "Hel", "godattributes": "Déesse des
+                          enfers" }
+                        </include>
+                      </div>
+                      <div class="col-6 col-md-4 col-lg-3">
+                        <include
+                          src="god-card-egyptian.html"
+                          data-type="Egyptian"
+                        >
+                          { "godimage": "img/isis.png", "godimagealt": "Isis",
+                          "godtitle": "Isis", "godattributes": "Déesse mère" }
+                        </include>
+                      </div>
                     </div>
                   </div>
                 </div>
