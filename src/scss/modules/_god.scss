@@ -47,18 +47,9 @@ p.god-attributes {
 
 // god-card___________________________
 
-.god {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
 @media (min-width: 768px) {
   .god {
     margin-bottom: 40px;
-    gap: 20px;
   }
 }
 
@@ -110,8 +101,13 @@ button.god-save {
 article.god-card {
   border: 2px solid var(--color-text-main);
   border-radius: 8px;
-  width: 179px;
+  height: 315px;
+  margin-bottom: 15px;
   overflow: hidden;
+}
+
+article.god-card img {
+  height: 216px;
 }
 
 article.god-card-greek {
